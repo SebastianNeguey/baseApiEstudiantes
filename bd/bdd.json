@@ -1,0 +1,24 @@
+{
+    "estudiante": [
+        {
+            "nombre": "Sebastian",
+            "id": "43671c9a-abf4-48b6-a56b-907cbdae11e8"
+        },
+        {
+            "nombre": "Sebastian",
+            "id": "c1f150eb-c7da-464b-bef4-5bac8604ec11"
+        },
+        {
+            "nombre": "Sebastian",
+            "id": "835ac586-4a09-4b4e-8e92-cc9137f5b2f5"
+        },
+        {
+            "nombre": "Sebastian",
+            "id": "ee42ee5e-c6b4-42f3-b803-2236b0e7638d"
+        },
+        {
+            "nombre": "Jesus",
+            "id": "fc66d846-e5c2-4363-b45a-ccc3cabb422c"
+        }
+    ]
+}

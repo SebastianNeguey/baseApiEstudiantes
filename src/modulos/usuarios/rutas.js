@@ -1,6 +1,6 @@
 const express= require('express');
 
-const respuesta= require('../../red/respuestas.js')
+const respuesta= require('../../middlewares/respuestas.js')
 const controlador= require('./index.js');
 
 router= express.Router();

@@ -1,15 +1,12 @@
 const express= require('express');
-const config = require('./config.js');
-
-const estudiante= require('./modulos/estudiante/rutas.js');
-
-
-const error= require('./red/errors.js');
+const config = require('./config/config.js');
+const usuarios= require('./modulos/usuarios/rutas.js');
+const error= require('./middlewares/errors.js');
 
 var cors = require('cors');
 const app= express();
-app.use(cors());
 
+app.use(cors());
 app.use(express.json());
 
 app.use(function(req, res, next) {
@@ -19,10 +16,12 @@ app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     next();
 });
+
 app.use(express.urlencoded({ extended:true}));
 app.set('port', config.app.port);
 
-app.use('/estudiantes', estudiante);
+app.use('/usuarios', usuarios);
 
+app.use(error);
 
 module.exports= app;

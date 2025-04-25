@@ -1,9 +1,8 @@
 
 
 
-
 module.exports= function(){
-    const bd = require('../../bd/bdd.js');
+    const bd = require('../../utils/bdd.js');
     const crypto = require("crypto");
 
     async function todos(){
